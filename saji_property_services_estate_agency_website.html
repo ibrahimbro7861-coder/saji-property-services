@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saji Property Services Ltd | Letting & Property Management</title>
+  <meta name="description" content="Trusted estate and letting agency in East London. Guaranteed rent, fully managed properties, friendly local experts." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary:#0f766e; /* teal */
+      --secondary:#0ea5a4;
+      --dark:#0f172a;
+      --muted:#64748b;
+      --bg:#f8fafc;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color:var(--dark); background:var(--bg); line-height:1.6;
+    }
+    a{color:inherit; text-decoration:none}
+    .container{max-width:1200px; margin:0 auto; padding:0 20px}
+    header{
+      background:linear-gradient(135deg, var(--primary), var(--secondary));
+      color:#fff; padding:18px 0; position:sticky; top:0; z-index:10;
+    }
+    nav{display:flex; align-items:center; justify-content:space-between}
+    .logo{font-weight:800; letter-spacing:.3px}
+    .nav-links a{margin-left:18px; font-weight:500}
+    .btn{
+      display:inline-block; background:#fff; color:var(--primary);
+      padding:10px 18px; border-radius:999px; font-weight:700
+    }
+    .hero{
+      padding:80px 0; background:
+      radial-gradient(1000px 300px at 20% -10%, rgba(14,165,164,.25), transparent),
+      radial-gradient(800px 300px at 90% 10%, rgba(15,118,110,.25), transparent);
+    }
+    .hero-grid{display:grid; grid-template-columns:1.2fr .8fr; gap:40px}
+    .hero h1{font-size:44px; line-height:1.1; margin:0 0 16px}
+    .hero p{color:var(--muted); font-size:18px}
+    .hero .cta{margin-top:24px; display:flex; gap:14px; flex-wrap:wrap}
+    .card{
+      background:var(--card); border-radius:16px; padding:24px;
+      box-shadow:0 10px 25px rgba(2,6,23,.08)
+    }
+    section{padding:70px 0}
+    h2{font-size:34px; margin:0 0 14px}
+    .sub{color:var(--muted); max-width:720px}
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+    .service h3{margin:8px 0}
+    .badge{display:inline-block; background:#ecfeff; color:#155e75; padding:6px 10px; border-radius:999px; font-weight:600; font-size:12px}
+    .stats{display:grid; grid-template-columns:repeat(4,1fr); gap:16px}
+    .stat{background:var(--card); border-radius:14px; padding:20px; text-align:center}
+    .stat strong{font-size:28px}
+    .testimonials{display:grid; grid-template-columns:repeat(3,1fr); gap:22px}
+    .quote{font-size:15px}
+    .name{margin-top:10px; font-weight:700}
+    .location{color:var(--muted); font-size:13px}
+    footer{background:#020617; color:#cbd5f5}
+    footer .container{display:grid; grid-template-columns:2fr 1fr 1fr; gap:20px}
+    footer a{color:#cbd5f5}
+    .small{font-size:13px; color:#94a3b8}
+    @media (max-width: 900px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid,.testimonials,.stats{grid-template-columns:1fr}
+      .nav-links{display:none}
+      .hero h1{font-size:36px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Saji Property Services Ltd</div>
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">East London Specialists</span>
+          <h1>Hassle‑free letting & fully managed properties</h1>
+          <p>Trusted by landlords and tenants across East London. Guaranteed rent options, fast maintenance response, and friendly local support.</p>
+          <div class="cta">
+            <a href="#contact" class="btn">Get a Free Valuation</a>
+            <a href="#services" class="btn" style="background:transparent;color:var(--primary);border:2px solid var(--primary)">Our Services</a>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Why choose us</h3>
+          <ul>
+            <li>Guaranteed rent & on‑time payments</li>
+            <li>End‑to‑end property management</li>
+            <li>Local market expertise</li>
+            <li>Clear communication & support</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Our services</h2>
+        <p class="sub">Everything you need to let, manage, or find your next home—under one roof.</p>
+        <div class="grid">
+          <div class="card service">
+            <h3>Guaranteed Rent</h3>
+            <p>Predictable income with no voids. We handle tenants, compliance, and maintenance.</p>
+          </div>
+          <div class="card service">
+            <h3>Fully Managed</h3>
+            <p>From marketing to maintenance—relax while we look after your property.</p>
+          </div>
+          <div class="card service">
+            <h3>Lettings & Sales</h3>
+            <p>Well‑maintained homes, fair pricing, and smooth transactions.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container stats">
+        <div class="stat"><strong>100+</strong><div class="small">Properties managed</div></div>
+        <div class="stat"><strong>East London</strong><div class="small">Local focus</div></div>
+        <div class="stat"><strong>On‑time</strong><div class="small">Rent payments</div></div>
+        <div class="stat"><strong>Fast</strong><div class="small">Maintenance response</div></div>
+      </div>
+    </section>
+
+    <section id="testimonials">
+      <div class="container">
+        <h2>What our clients say</h2>
+        <p class="sub">A curated selection of verified customer feedback highlighting our most consistent strengths.</p>
+        <div class="testimonials">
+          <div class="card">
+            <p class="quote">“I have been renting out my property on guaranteed rent for a year now. Very impressed with the service and maintenance handling. Happy with the rent.”</p>
+            <div class="name">Keerthana E.</div>
+            <div class="location">Landlord</div>
+          </div>
+          <div class="card">
+            <p class="quote">“Rent has always been paid on time. Hassle‑free service and my property is kept in immaculate condition.”</p>
+            <div class="name">Sanoj B.</div>
+            <div class="location">Landlord</div>
+          </div>
+          <div class="card">
+            <p class="quote">“Very good customer service and fast responses. Highly recommend.”</p>
+            <div class="name">CuteUnicornyeah P.</div>
+            <div class="location">Tenant</div>
+          </div>
+          <div class="card">
+            <p class="quote">“One of the best real estate agencies in East London. Well maintained properties and friendly staff.”</p>
+            <div class="name">Nikita V.</div>
+            <div class="location">Local Guide</div>
+          </div>
+          <div class="card">
+            <p class="quote">“Best letting agents in the game. Highly recommend to any landlord.”</p>
+            <div class="name">Raf M.</div>
+            <div class="location">Landlord</div>
+          </div>
+          <div class="card">
+            <p class="quote">“Excellent service, friendly and supportive staff.”</p>
+            <div class="name">Su B.</div>
+            <div class="location">Client</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contact us</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Get in touch</h3>
+            <p>Email: <a href="mailto:sajiproperty@yahoo.com">sajiproperty@yahoo.com</a></p>
+            <p>Serving East Ham & East London</p>
+          </div>
+          <div class="card">
+            <h3>Free valuation</h3>
+            <p>Tell us about your property and we’ll be in touch.</p>
+            <form>
+              <input placeholder="Name" style="width:100%;padding:10px;margin-bottom:8px" />
+              <input placeholder="Email" style="width:100%;padding:10px;margin-bottom:8px" />
+              <textarea placeholder="Property details" style="width:100%;padding:10px"></textarea>
+              <button class="btn" type="button" style="margin-top:10px">Submit</button>
+            </form>
+          </div>
+          <div class="card">
+            <h3>Transparency</h3>
+            <p class="small">We welcome feedback and aim to resolve issues promptly. Testimonials shown are a representative selection highlighting common experiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>Saji Property Services Ltd</strong>
+        <p class="small">© <span id="year"></span> All rights reserved.</p>
+      </div>
+      <div>
+        <a href="#">Privacy</a><br />
+        <a href="#">Terms</a>
+      </div>
+      <div>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
